@@ -29,9 +29,13 @@ type IconType<T extends IconName> = {
 
 type AvatarProps = {
   icon: IconType<IconName>;
+  slog: string[];
 };
 
-export function Avatar({icon}: AvatarProps) {
+export function Avatar({icon, slog}: AvatarProps) {
+  if (slog.includes(icon)) {
+    console.log({slog});
+  }
   return (
     <S.Container>
       <Image source={iconsComponent[icon]} />

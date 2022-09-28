@@ -43,9 +43,9 @@ export function HomeScreen() {
         <S.Container>
           {films?.map(f => {
             return (
-              <S.Film>
-                <Avatar icon={'Avatar'} />
-                <Paragraph key={f.title} weight={'Regular'}>{f.title}</Paragraph>
+              <S.Film key={f.title} >
+                <Avatar icon={'Avatar'} slog={[f.title]} />
+                <Paragraph weight={'Regular'}>{f.title}</Paragraph>
               </S.Film>
             );
           })}
