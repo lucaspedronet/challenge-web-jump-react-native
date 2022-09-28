@@ -1,0 +1,53 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": [
+      "es2017"
+    ],
+    "allowJs": true,
+    // "checkJs": true,
+    "jsx": "react-native",
+    "rootDir": "./",
+    // "removeComments": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "types": ["react-native", "jest", "styled-components-react-native"], // add o styled-components... para resolver o type
+    "baseUrl": "./src",
+    "paths": {
+      "~__mocks__": ["__mocks__"],
+      "~@types/*": ["@types/*"],
+      "~assets/icons": ["assets/icons"],
+      "~assets/images": ["assets/images"],
+      "~constants": ["constants"],
+      "~contexts": ["contexts"],
+      "~components": ["components"],
+      "~config/*": ["config/*"],
+      "~contexts/*": ["contexts/*"],
+      "~hooks": ["hooks"],
+      "~routes/*": ["routes/*"],
+      "~screens/private": ["screens/private"],
+      "~screens/public": ["screens/public"],
+      "~types": ["types"],
+      "~services": ["services"],
+      "~utils": ["utils"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": false,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.ts"
+  ],
+  "include": [
+    "src"
+  ]
+}
