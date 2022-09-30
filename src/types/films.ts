@@ -1,9 +1,9 @@
 export type FilmsData = {
-  films: IFilms;
+  films: Films[];
   loading: boolean;
 }
 
-export type IFilms = {
+export type Films = {
   title :  string,
   ano :  number,
   ids :  {

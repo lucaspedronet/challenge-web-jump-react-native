@@ -1,0 +1,6 @@
+module Pods_ChallengeJump {
+  umbrella header "Pods-ChallengeJump-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -28,7 +28,7 @@ module.exports = {
           '~contexts': './src/contexts',
           '~components': './src/components',
           '~config': './src/config',
-          '~hooks/*': './src/hooks/*',
+          '~hooks': './src/hooks',
           '~routes': './src/routes',
           '~screens': './src/screens',
           '~types': './src/types',
