@@ -12,11 +12,9 @@ export function ButtonLabel({children, ...rest}: Props) {
   return (
     <S.Container {...rest}>
       <Paragraph
-          weight="Medium"
-          typeFont="Regular"
-          size="small"
-          color="white"
-          style={styles.label}>
+        weight="Medium"
+        size="small"
+        style={styles.label}>
           {children}
         </Paragraph>
     </S.Container>
