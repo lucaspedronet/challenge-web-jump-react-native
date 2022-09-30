@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { FlatList, StyleSheet, View } from 'react-native';
 import {
   Avatar,
@@ -37,6 +37,7 @@ export function HomeScreen() {
   return (
     <LayoutScreen
       isPadding="zero"
+      barStyle="light-content"
       isScroll={false}
     >
       <>
