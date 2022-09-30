@@ -7,29 +7,22 @@ import * as Component from './ErrorNetwork.styles';
 
 export type ErrorNetworkProps = {
   onTryAgain: () => void;
-  slog: string;
 };
 
-export function ErrorNetwork({onTryAgain, slog}: ErrorNetworkProps) {
+export function ErrorNetwork({onTryAgain}: ErrorNetworkProps) {
   return (
     <Component.Container>
       <Paragraph
         weight="Bold"
-        typeFont="Medium"
         size="default"
-        color="default"
         style={styles.title}>
         Ocorreu um erro.
       </Paragraph>
       <Paragraph
         weight="Regular"
-        typeFont="Regular"
         size="small"
-        color="default"
         style={styles.description}>
-        <>
-          Não foi possível se conectar ao {slog}.
-        </>
+          Não foi possível se conectar ao servidor. Verifique sua conexão!
       </Paragraph>
 
       <ButtonLabel onPress={onTryAgain}>
