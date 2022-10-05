@@ -22,7 +22,7 @@ const wrapper = (props) => render(
 const middlewares: Middleware<{}, any, Dispatch<AnyAction>>[] | undefined = [thunk]
 const mockStore = configureStore(middlewares);
 
-test('renderização padrão', () => {
+test.skip('renderização padrão', () => {
   const component = wrapper({})
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
