@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renderização padrão 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#5F2EE2",
+      "borderRadius": 47,
+      "height": 94,
+      "justifyContent": "center",
+      "opacity": 1,
+      "paddingBottom": 27,
+      "paddingLeft": 55,
+      "paddingRight": 55,
+      "paddingTop": 24,
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    size="small"
+    style={
+      [
+        {
+          "color": "#ADADB8",
+          "fontSize": 24,
+          "fontStyle": "normal",
+          "fontWeight": "500",
+          "lineHeight": 35,
+        },
+        {
+          "textAlign": "center",
+        },
+      ]
+    }
+    weight="Medium"
+  >
+    Entrar
+  </Text>
+</View>
+`;

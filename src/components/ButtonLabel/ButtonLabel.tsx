@@ -4,11 +4,11 @@ import { Paragraph } from '../Paragraph/Paragraph';
 
 import * as S from './ButtonLabel.styles';
 
-interface Props extends TouchableOpacityProps {
+export interface ButtonLabelProps extends TouchableOpacityProps {
   children: string;
 }
 
-export function ButtonLabel({children, ...rest}: Props) {
+export function ButtonLabel({children, ...rest}: ButtonLabelProps) {
   return (
     <S.Container {...rest}>
       <Paragraph
