@@ -9,8 +9,16 @@ module.exports = {
     "<rootDir>/setupTest.ts"
   ],
   setupFilesAfterEnv: [
-    "@testing-library/jest-native/extend-expect",
-    "jest-styled-components"
+    "jest-styled-components",
+    "@testing-library/jest-native/extend-expect"
   ],
-
+  transformIgnorePatterns: [
+      "/node_modules/(?![@autofiy/autofiyable|@autofiy/property]).+\\.js$",
+      "/node_modules/(?![@autofiy/autofiyable|@autofiy/property]).+\\.ts$",
+      "/node_modules/(?![@autofiy/autofiyable|@autofiy/property]).+\\.tsx$",
+  ],
+  // testMatch: ["**/__tests__/**/*.ts?(x)", "**/?(*.)+(test).ts?(x)"],
+  // transform: {
+  //     "^.+\\.(js|ts)$": "ts-jest",
+  // },
 }

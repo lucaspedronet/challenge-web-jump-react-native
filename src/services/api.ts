@@ -3,8 +3,6 @@ import { NoNetworkError } from '~config/exceptions';
 import { BASE_URL, CLIENT_ID } from '@env';
 import * as device from '~utils';
 
-console.log(CLIENT_ID);
-
 const defaultConfig = {
   baseURL: `https://${BASE_URL}/`,
   headers: {

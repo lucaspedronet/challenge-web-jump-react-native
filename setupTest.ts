@@ -1,12 +1,5 @@
 import '@testing-library/react-native';
 
-jest.mock('@react-navigation/native', () => {
-  const restNativigation = jest.requireActual('@react-navigation/native');
-  return {
-    ...restNativigation,
-    useNavigation: () => ({
-      navigate: jest.fn(),
-      dispatch: jest.fn(),
-    }),
-  };
-});
+import mockRNCNetInfo from '@react-native-community/netinfo/jest/netinfo-mock.js';
+
+jest.mock("@react-native-community/netinfo", () => mockRNCNetInfo);
